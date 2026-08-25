@@ -23,8 +23,9 @@ jobs:
       - name: Setup Godot
         uses: chickensoft-games/setup-godot@v2
         with:
-          version: 4.7
-          export-templates: true
+          version: 4.7.2-stable
+          use-dotnet: false
+          include-templates: true
 
       - name: Export Web
         run: |
