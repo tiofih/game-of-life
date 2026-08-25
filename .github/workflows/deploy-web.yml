@@ -30,7 +30,7 @@ jobs:
       - name: Export Web
         run: |
           mkdir -p dist/web
-          godot --headless --path . --export-release "Web" dist/web/index.html
+          xvfb-run -a godot --path . --export-release "Web" dist/web/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
